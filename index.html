@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이연지</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="btns">
+        <div class="container">
+            <div class="btns_menu">
+                <button class="btn home">Home</button>
+                <button class="btn about">1학년 1학기</button>
+                <button class="btn skills">1학년 2학기</button>
+                <button class="btn works">2학년 1학기</button>
+                <button class="btn contact">2학년 1학기</button>
+            </div>
+        </div>
+    </div>
+    <section id="home">
+        <div class="wrapper">
+            <h1>Home</h1>
+            <h2>이연지 <br> 2004.08.11 <br> 한국폴리텍대학 정수 캠퍼스 <br>  시각디자인과</h2>
+            <h3>입학 후 1학년 1학기~ 현재 2학년 1학기 작품 중 선정하여 소개</h3>
+            <h4><img src="./포차코.png" alt="포차코"></h4>
+        </div>
+    </section>
+    <section id="about">
+        <div class="wrapper">
+            <h1>1학년 1학기</h1>
+            <h2>이미지 그래픽 | 제품 광고 포스터</h2>
+            <h3>브리츠 헤드셋 광고 </h3> <br>
+                <h4>  장점인 노이즈 캔슬린을 주 목적으로 <br> 시끄러운 비행기 소음도 헤드셋을 쓰면 <br>  노이즈 캔슬링이 잘 되어 소음이 들리지 않는다. </h4>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="wrapper">
+            <h1>1학년 2학기</h1>
+            <h2>편집디자인실습응용 | 잡지 제작</h2>
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam assumenda voluptates alias doloremque dolores cumque, hic quae quod, enim, earum nemo ipsum aliquid quam explicabo molestiae excepturi illo? Pariatur.</h3>
+        </div>
+    </section>
+    <section id="works">
+        <div class="wrapper">
+            <h1>2학년 1학기</h1>
+            <h2>패키지디자인 | 원두 패키지 디자인</h2>
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam assumenda voluptates alias doloremque dolores cumque, hic quae quod, enim, earum nemo ipsum aliquid quam explicabo molestiae excepturi illo? Pariatur.</h3>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="wrapper">
+            <h1>2학년 1학기</h1>
+            <h2>웹디자인실습기초 | 홈페이지 제작</h2>
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam assumenda voluptates alias doloremque dolores cumque, hic quae quod, enim, earum nemo ipsum aliquid quam explicabo molestiae excepturi illo? Pariatur.</h3>
+        </div>
+    </section>
+    
+
+    <script>
+        const btnHome = document.querySelector('.home');
+        const sectionHome = document.querySelector('#home');
+        btnHome.addEventListener('click', function() {
+            sectionHome.scrollIntoView({behavior:"smooth", block:"center"})
+        });
+        const btnAbout = document.querySelector('.about');
+        const sectionAbout = document.querySelector('#about');
+        btnAbout.addEventListener('click', function() {
+            sectionAbout.scrollIntoView({behavior:"smooth", block:"center"})
+        });
+        const btnSkills = document.querySelector('.skills');
+        const sectionSkills = document.querySelector('#skills');
+        btnSkills.addEventListener('click', function() {
+            sectionSkills.scrollIntoView({behavior:"smooth", block:"center"})
+        });
+        const btnWorks = document.querySelector('.works');
+        const sectionWorks = document.querySelector('#works');
+        btnWorks.addEventListener('click', function() {
+            sectionWorks.scrollIntoView({behavior:"smooth", block:"center"})
+        });
+        const btnContact = document.querySelector('.contact');
+        const sectionContact = document.querySelector('#contact');
+        btnContact.addEventListener('click', function() {
+            sectionContact.scrollIntoView({behavior:"smooth", block:"center"})
+        });
+    </script>
+</body>
+</html>
